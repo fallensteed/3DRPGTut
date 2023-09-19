@@ -15,6 +15,11 @@ func _physics_process(delta):
 	else:
 		player.change_state("idle")
 
+	if Input.is_action_just_pressed("Jump") and player.is_on_floor():
+		player.change_state("jump")
+		
+	if Input.is_action_just_pressed("BasicAttack"):
+		player.change_state("attack")
 
 
 func exit():

@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var player_mesh = get_node("KayKit_AnimatedCharacter_v1_2")
 
 const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 300
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -24,11 +24,6 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
-	# Handle Jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-		playback.travel("Jump")
-
 	var h_rot = $CameraController.transform.basis.get_euler().y
 
 	direction = Vector3(Input.get_action_strength("MoveRight") - Input.get_action_strength("MoveLeft"), 0, Input.get_action_strength("MoveBack") - Input.get_action_strength("MoveForward"))
@@ -45,3 +40,8 @@ func change_state(new_state_name):
 	state.setup("change_state", playback, self)
 	state.name = new_state_name
 	add_child(state)
+
+
+func _on_animation_tree_animation_finished(anim_name):
+	if anim_name == "Attack(1h)":
+		change_state("idle")

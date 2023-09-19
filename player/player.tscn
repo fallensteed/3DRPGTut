@@ -3938,21 +3938,21 @@ bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 bones/0/enabled = true
 bones/0/position = Vector3(0, 0, 0)
-bones/0/rotation = Quaternion(-0.00117443, -3.34303e-29, 3.79837e-18, 0.999999)
+bones/0/rotation = Quaternion(-0.00116388, -3.08232e-29, 3.79836e-18, 0.999999)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "Head"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.711598, 0)
 bones/1/enabled = true
 bones/1/position = Vector3(0, 0.711598, 0)
-bones/1/rotation = Quaternion(0.0462247, 2.15932e-26, -1.53711e-17, 0.998931)
+bones/1/rotation = Quaternion(0.0462109, 2.19273e-26, -1.53711e-17, 0.998932)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "armLeft"
 bones/2/parent = 0
 bones/2/rest = Transform3D(-1.19209e-07, 0.471936, -0.881633, 2.5332e-07, -0.881633, -0.471936, -1, -2.5332e-07, -1.19209e-07, 0.14, 0.691598, -1.3027e-15)
 bones/2/enabled = true
 bones/2/position = Vector3(0.14, 0.691598, -1.3027e-15)
-bones/2/rotation = Quaternion(-0.685447, -0.173913, 0.685317, -0.173946)
+bones/2/rotation = Quaternion(-0.68545, -0.173898, 0.685322, -0.17393)
 bones/2/scale = Vector3(1, 1, 1)
 bones/3/name = "handSlotLeft"
 bones/3/parent = 2
@@ -3966,7 +3966,7 @@ bones/4/parent = 0
 bones/4/rest = Transform3D(-1.19209e-07, -0.471936, -0.881633, -2.23518e-07, -0.881633, 0.471936, -1, 2.23517e-07, -1.19209e-07, -0.14, 0.691598, 8.40813e-15)
 bones/4/enabled = true
 bones/4/position = Vector3(-0.14, 0.691598, 8.40813e-15)
-bones/4/rotation = Quaternion(-0.704565, 0.287161, 0.646671, 0.0542563)
+bones/4/rotation = Quaternion(-0.704569, 0.287151, 0.646672, 0.0542471)
 bones/4/scale = Vector3(1, 1, 1)
 bones/5/name = "handSlotRight"
 bones/5/parent = 4
@@ -3977,7 +3977,7 @@ bones/5/rotation = Quaternion(0.300506, -0.376591, 0.679877, 0.55285)
 bones/5/scale = Vector3(1, 1, 1)
 
 [node name="Head" type="BoneAttachment3D" parent="KayKit_AnimatedCharacter_v1_2/KayKit Animated Character2/Skeleton3D"]
-transform = Transform3D(1, -7.59673e-18, -8.92182e-21, 7.59673e-18, 0.999997, 0.00234885, -8.92182e-21, -0.00234885, 0.999997, 0, 0, 0)
+transform = Transform3D(1, -7.59673e-18, -8.8417e-21, 7.59673e-18, 0.999997, 0.00232776, -8.8417e-21, -0.00232776, 0.999997, 0, 0, 0)
 bone_name = "Body"
 bone_idx = 0
 
@@ -3999,7 +3999,7 @@ mesh = SubResource("ArrayMesh_3g2wh")
 skeleton = NodePath("")
 
 [node name="Body" type="BoneAttachment3D" parent="KayKit_AnimatedCharacter_v1_2/KayKit Animated Character2/Skeleton3D"]
-transform = Transform3D(1, 2.31443e-17, -7.28374e-19, -2.31159e-17, 0.995941, -0.0900114, -1.35784e-18, 0.0900114, 0.995941, -5.40582e-18, 0.711596, -0.00167144)
+transform = Transform3D(1, 2.31443e-17, -7.28079e-19, -2.31159e-17, 0.995941, -0.0900049, -1.35798e-18, 0.0900049, 0.995941, -5.40581e-18, 0.711596, -0.00165643)
 bone_name = "Head"
 bone_idx = 1
 
@@ -4009,7 +4009,7 @@ mesh = SubResource("ArrayMesh_w83he")
 skeleton = NodePath("")
 
 [node name="ArmLeft" type="BoneAttachment3D" parent="KayKit_AnimatedCharacter_v1_2/KayKit Animated Character2/Skeleton3D"]
-transform = Transform3D(0.000189304, 0.476832, -0.878994, -0.00234818, -0.878992, -0.476831, -0.999997, 0.00215432, 0.000953237, 0.14, 0.691596, -0.00162446)
+transform = Transform3D(0.000187814, 0.476792, -0.879016, -0.00232711, -0.879013, -0.476791, -0.999997, 0.00213509, 0.000944517, 0.14, 0.691596, -0.00160988)
 bone_name = "armLeft"
 bone_idx = 2
 
@@ -4019,12 +4019,12 @@ mesh = SubResource("ArrayMesh_3eqgr")
 skeleton = NodePath("")
 
 [node name="HandLeft" type="BoneAttachment3D" parent="KayKit_AnimatedCharacter_v1_2/KayKit Animated Character2/Skeleton3D"]
-transform = Transform3D(-0.999985, -0.000189304, -0.00556168, -0.0055621, 0.00234818, 0.999982, -0.000176297, 0.999997, -0.00234919, 0.402697, 0.20734, -0.000437601)
+transform = Transform3D(-0.999985, -0.000187814, -0.00551599, -0.0055165, 0.00232711, 0.999982, -0.000174908, 0.999997, -0.00232811, 0.402675, 0.207328, -0.000433611)
 bone_name = "handSlotLeft"
 bone_idx = 3
 
 [node name="ArmRight" type="BoneAttachment3D" parent="KayKit_AnimatedCharacter_v1_2/KayKit Animated Character2/Skeleton3D"]
-transform = Transform3D(-0.00128996, -0.474818, -0.880083, -0.336687, -0.828495, 0.44748, -0.941616, 0.29689, -0.158796, -0.14, 0.691596, -0.00162446)
+transform = Transform3D(-0.00127935, -0.474795, -0.880095, -0.336667, -0.828515, 0.447458, -0.941623, 0.296872, -0.158788, -0.14, 0.691596, -0.00160988)
 bone_name = "armRight"
 bone_idx = 4
 
@@ -4034,7 +4034,7 @@ mesh = SubResource("ArrayMesh_bk2mg")
 skeleton = NodePath("")
 
 [node name="HandRight" type="BoneAttachment3D" parent="KayKit_AnimatedCharacter_v1_2/KayKit Animated Character2/Skeleton3D"]
-transform = Transform3D(-0.975281, 0.209392, -0.0705868, 0.00394759, 0.3359, 0.941889, 0.220935, 0.918328, -0.328423, -0.401588, 0.23516, 0.161939)
+transform = Transform3D(-0.975281, 0.209382, -0.0706137, 0.0039148, 0.335887, 0.941894, 0.220934, 0.918335, -0.328404, -0.401575, 0.235149, 0.161943)
 bone_name = "handSlotRight"
 bone_idx = 5
 
@@ -4052,7 +4052,15 @@ spring_length = 5.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraController/SpringArm3D"]
 
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraController/SpringArm3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.72314, 0)
+spring_length = 5.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraController/SpringArm3D/SpringArm3D"]
+
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_mxlxu")
 anim_player = NodePath("../KayKit_AnimatedCharacter_v1_2/AnimationPlayer")
 active = true
+
+[connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

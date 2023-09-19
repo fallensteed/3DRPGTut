@@ -13,5 +13,11 @@ func _physics_process(delta):
 	player.velocity.x = move_toward(player.velocity.x, 0, player.SPEED)
 	player.velocity.z = move_toward(player.velocity.z, 0, player.SPEED)
 
+	if Input.is_action_just_pressed("Jump") and player.is_on_floor():
+		player.change_state("jump")
+		
+	if Input.is_action_just_pressed("BasicAttack"):
+		player.change_state("attack")
+
 func exit():
-	print("exit IdleState")
+	pass
